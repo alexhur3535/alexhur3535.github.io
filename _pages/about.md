@@ -17,42 +17,109 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
-
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+# About Me
+Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at Sungkyunkwan University. I am advised by Professor <a href='https://professor.skku.edu/researcher/professorList.do?mode=view&perId=LZStrLISwEgpgTgqgDgDwDbACoGUBSBDA9gDkwBMBnAUQHEBzAXhqA%20&categoryId=U&jojikCode1=3191'>Moohong Min</a>. My research sits at the intersection of large language models and security, spanning jailbreak and multimodal attacks, retrieval-augmented generation, and also forensic analysis of AI agents. I aim to understand how AI systems fail under adversarial pressure, and to turn those failure modes into defenses and accountability mechanisms that hold up outside the lab.
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026.08.07*: &nbsp;🎉🎉 "Cite Unseen: Measuring Citation-Channel Vulnerabilities in Retrieval-Augmented Generation" was accepted to **CIKM 2026**! See you in Rome.
+- *2026.07.10*: &nbsp;🎉🎉 "STAFT: Privacy-Preserving Semantic Trace Abstraction for Forensic Triage of Personal AI Agent Incidents" was accepted to **DFRWS APAC 2026**! See you in Singapore.
 
-# 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+# 📖 Education
+- *2026.06 - Present*, Ph.D. in Artificial Intelligence, Sungkyunkwan University
+- *2024.03 - 2026.02*, Master of Engineering in Immersive Media Engineering, Sungkyunkwan University (GPA: 4.40/4.5)
+- *2020.03 - 2024.02*, Bachelor of Science in Computer Education, Sungkyunkwan University (GPA: 3.96/4.5)
+
+
+# 🚀 Projects
+<!-- Fill in below, then delete this comment.
+- *2025.03 - 2025.12*, **Project Name** — one-line description.
+  [[GitHub]](https://github.com/...){:target="_blank" rel="noopener"}
+-->
+
+
+# 📝 Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CIKM 2026</div><img src='images/citeunseen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**CiteUnseen: Weaponizing Citations in Retrieval-Augmented Generation**
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**Minseok Hur**, Jiho Shin, Damin Kim, Moohong Min
+
+35th ACM International Conference on Information and Knowledge Management (CIKM 2026)
+
+<a href="/files/cikm2026_short_cite_unseeen.pdf" target="_blank" rel="noopener">Paper</a> | [GitHub](https://github.com/alexhur3535/CiteUnseen) 
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DFRWS APAC 2026</div><img src='images/staft.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**STAFT: Privacy-Preserving Semantic Trace Abstraction for Forensic Triage of Personal AI Agent Incidents**
+
+**Minseok Hur**, Jiho Shin, Moohong Min
+
+Digital Forensic Research Workshop Asia–Pacific (DFRWS APAC 2026)
+
+<a href="/files/dfrwsapac2026_staft.pdf" target="_blank" rel="noopener">Paper</a> | [GitHub](https://github.com/alexhur3535/STAFT) 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026</div><img src='images/mdsra.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**MD-SRA: Multimodal Detection of SEO-based Redirection Attacks**
+
+**Minseok Hur**, Jiho Shin, Moohong Min
+
+Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+
+[Paper](https://dl.acm.org/doi/epdf/10.1145/3748522.3779877) | [GitHub](https://github.com/gr8alex35/MD-SRA) 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026</div><img src='images/sensitivemamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**SensitiveMamba: Selective State Space Modeling for Robust Time Series Anomaly Detection**
+
+**Minseok Hur**, Dongho Kim, Moohong Min
+
+Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+
+[Paper](https://dl.acm.org/doi/epdf/10.1145/3748522.3779727) | [GitHub](https://github.com/gr8alex35/SensitiveMamba) 
+</div>
+</div>
+
+
+<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
+
+
+# 💼 Experience
+<!-- Fill in below, then delete this comment.
+- *2025.01 - 2025.08*, **Role**, Organization, Location.
+-->
+
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.12* Best Student Paper Award/ISOFIC 2024, "Procedures for Developing Secure FPGA in Nuclear Power Plants".. 
+- *2023.11* Grand Award/Gyeonggi-do Metaverse Ideathon, Ministry of Science and ICT, Korea. 
+- *2022.09* Bronze Award/2022 2nd SKKU College of Education AI Education Hackathon, SKKU, Korea. 
+- *2021.12* Silver Award/College of Education AI Education Capstone Design Contest, SKKU, Korea. 
+- *2021.10* Encouragement Award/2021 Capstone Design and Idea Hackathon Contest, Korea Internet & Security Agency, Korea.
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 💬 Invited Talks
+<!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+<!-- # 💻 Internships
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->

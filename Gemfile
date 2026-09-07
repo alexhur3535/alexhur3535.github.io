@@ -16,7 +16,13 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem "wdm", ">= 0.2.0" if Gem.win_platform?
+
+# Windows has no zoneinfo database; tzinfo needs the data shipped as a gem.
+gem "tzinfo-data" if Gem.win_platform?
+
+# Ruby 3.0 dropped webrick from stdlib, but `jekyll serve` still needs it.
+gem "webrick"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
