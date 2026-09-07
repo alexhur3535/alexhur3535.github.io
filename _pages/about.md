@@ -41,7 +41,7 @@ Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CIKM 2026</div><img src='images/citeunseen.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CIKM 2026 | Conference</div><img src='images/citeunseen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
@@ -55,7 +55,7 @@ Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DFRWS APAC 2026</div><img src='images/staft.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DFRWS APAC 2026 | Conference</div><img src='images/staft.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
@@ -69,7 +69,38 @@ Digital Forensic Research Workshop Asia–Pacific (DFRWS APAC 2026)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026</div><img src='images/mdsra.png' alt="sym" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJIS | Journal</div><img src='images/ijis.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Are large language models effective for detecting spam messages?**
+
+**Minseok Hur**, Sooyon Seo, Jaeho Hwang, Moohong Min
+
+International Journal of Information Security (Q1)
+
+[Paper](https://link.springer.com/article/10.1007/s10207-026-01283-5) | [GitHub](https://github.com/gr8alex35/MD-SRA)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Scientometrics | Journal</div><img src='images/scientometrics.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Evidence access design for llm-based scientometrics: graph-based evidence augmentation over semantic retrieval**
+
+Yunseop Lee, **Minseok Hur**, Moohong Min
+
+Scientometrics (Q1)
+
+[Paper](https://link.springer.com/article/10.1007/s11192-026-05729-4)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026 | Conference</div><img src='images/mdsra.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
@@ -77,13 +108,13 @@ Digital Forensic Research Workshop Asia–Pacific (DFRWS APAC 2026)
 
 **Minseok Hur**, Jiho Shin, Moohong Min
 
-Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+SAC '26: Proceedings of the 41th ACM/SIGAPP Symposium on Applied Computing
 
-[Paper](https://dl.acm.org/doi/epdf/10.1145/3748522.3779877) | [GitHub](https://github.com/gr8alex35/MD-SRA) 
+[Paper](https://dl.acm.org/doi/abs/10.1145/3748522.3779877) | [GitHub](https://github.com/gr8alex35/MD-SRA) 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026</div><img src='images/sensitivemamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2026 | Conference</div><img src='images/sensitivemamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
@@ -91,9 +122,156 @@ Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
 
 **Minseok Hur**, Dongho Kim, Moohong Min
 
-Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+SAC '26: Proceedings of the 41th ACM/SIGAPP Symposium on Applied Computing
 
-[Paper](https://dl.acm.org/doi/epdf/10.1145/3748522.3779727) | [GitHub](https://github.com/gr8alex35/SensitiveMamba) 
+[Paper](https://dl.acm.org/doi/abs/10.1145/3748522.3779727) | [GitHub](https://github.com/gr8alex35/SensitiveMamba) 
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CIKM 2025 | Conference</div><img src='images/cikm2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Jailbreaking LLMs Through Cross-Cultural Prompts**
+
+Damin Kim, **Minseok Hur**, Jeongin Lee, Moohong Min
+
+CIKM '25: Proceedings of the 34th ACM International Conference on Information and Knowledge Management
+
+[Paper](https://dl.acm.org/doi/abs/10.1145/3746252.3760892)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SAC 2025 | Conference</div><img src='images/qarag.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**From RAG to QA-RAG: Integrating Generative AI for Pharmaceutical Regulatory Compliance Process**
+
+Jaewoong Kim, **Minseok Hur**, Moohong Min
+
+SAC '25: Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing
+
+[Paper](https://dl.acm.org/doi/abs/10.1145/3672608.3707749) | <a href="/files/sac2025_poster.pdf" target="_blank" rel="noopener">Poster</a>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISOFIC 2024 | Conference</div><img src='images/isofic2024.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Procedures for Developing Secure FPGA in Nuclear Power Plants**
+
+**Minseok Hur**, Jiho Shin, Moohong Min, Aram Kim
+
+8th International Symposium on Future Instrumentation and Control for Nuclear Power Plants 
+
+<a href="/files/isofic2024.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CSA 2024 | Conference</div><img src='images/csa2024_fpga.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Analysis of FPGA Development Processes and Associated Security Threats**
+
+**Minseok Hur**, Jiho Shin, Moohong Min, Aram Kim
+
+16th International Conference on Computer Science and its Applications
+
+<a href="/files/csa2024_fpga_analysis.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CSA 2024 | Conference</div><img src='images/csa2024_attackcase.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Development of an Attack Case Generation Model Based on the Characteristics of Digital Assets of Nuclear Power Plants**
+
+**Minseok Hur**, Eunji Lee, Sooyon Seo, Jaeho Hwang, Dongmin Kim, Moohong Min, Aram Kim
+
+16th International Conference on Computer Science and its Applications
+
+<a href="/files/csa2024_attackcase.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MobiSec 2024 | Conference</div><img src='images/mobisec2024.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**A Study on Evaluation Items and Indicators for Ensuring Cyber Resilience**
+
+Sooyon Seo, Jaeho Hwang, **Minseok Hur**, Dongmin Kim, Sechan Lee, Moohong Min
+
+The 8th International Conference on Mobile Internet Security (MobiSec)
+
+<a href="/files/mobisec2024_resilience.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MobiSec 2024 | Conference</div></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**Analysis of Deepfake Detection Models Against Deepfake Crimes**
+
+Sechan Lee, Sooyon Seo, Jaeho Hwang, **Minseok Hur**, Dongmin Kim, Aram Kim, Moohong Min
+
+The 8th International Conference on Mobile Internet Security (MobiSec)
+
+<a href="/files/mobisec2024_analysis.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KCC 2025 | Conference</div></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**BAG: "BERT-AttentionGNN"HTML 하이브리드 모델을 활용한 불법사이트 구조 탐지**
+
+이세찬, **허민석**, 민무홍
+
+2025 한국컴퓨터종합학술대회 논문집 (KCC)
+
+<a href="/files/kcc2025_bag.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KCC 2024 | Conference</div></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**스팸 메시지 발생 빈도 및 패턴 분석에 관한 연구**
+
+서수연, **허민석**, 황재호, 장지원, 신지호, 민무홍
+
+2024 한국컴퓨터종합학술대회 논문집 (KCC)
+
+<a href="/files/kcc2024_spam.pdf" target="_blank" rel="noopener">Paper</a>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KCC 2024 | Conference</div></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+**대규모 온라인으로 진행되는 비전공자 대상 인공지능 교양필수 과목의 효과적인 운영 사례 연구**
+
+황재호, **허민석**, 서수연, 민무홍
+
+2024 한국컴퓨터종합학술대회 논문집 (KCC)
+
+<a href="/files/kcc2024_lecture.pdf" target="_blank" rel="noopener">Paper</a>
 </div>
 </div>
 
