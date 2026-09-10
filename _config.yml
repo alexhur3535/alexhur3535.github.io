@@ -11,6 +11,13 @@ description              : "Treasure the time to learn, then make it into realit
 repository               : "alexhur3535/alexhur3535.github.io"
 google_scholar_stats_use_cdn : true
 
+# Easter egg: clicking `word` in the sidebar description `clicks` times opens `url`.
+# Leave `word` blank to disable. The word must appear in `description` above.
+easter_egg:
+  word                   : "Treasure"
+  clicks                 : 4
+  url                    : "/Jing/"
+
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 

@@ -1,0 +1,158 @@
+---
+permalink: /Jing/
+title: ""
+excerpt: ""
+# 지도가 넓게 보이도록 사이드바를 끕니다. 사이드바를 원하면 true 로 바꾸세요.
+author_profile: false
+# 숨겨진 이스터에그 페이지: 네비게이션·사이트맵·검색엔진 어디에도 노출되지 않습니다.
+sitemap: false
+noindex: true
+# 타일·라이브러리 호스트에 미리 연결해 TLS 핸드셰이크를 첫 요청 경로에서 뺍니다.
+preconnect:
+  - https://tiles.stadiamaps.com
+  - https://cdnjs.cloudflare.com
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+
+<style>
+  .jing-header { margin: 0 0 1.2em; }
+  .jing-header h1 { margin: 0 0 .25em; font-size: 1.6em; }
+  .jing-header p { margin: 0; color: #6b6b6b; font-size: .9em; }
+
+  #jing-map {
+    height: 70vh;
+    min-height: 420px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+  }
+
+  /* 번호가 붙은 원형 핀. 외부 이미지에 의존하지 않습니다. */
+  .jing-pin {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: #1a4b9c;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    color: #fff;
+    font: 600 12px/22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-align: center;
+  }
+
+  .leaflet-popup-content { margin: 0; width: auto !important; }
+  .leaflet-popup-content-wrapper { border-radius: 6px; padding: 0; overflow: hidden; }
+
+  .jing-card { display: flex; gap: 12px; padding: 12px; width: 330px; }
+  .jing-card__photo {
+    flex: 0 0 110px; height: 110px;
+    border-radius: 4px; object-fit: cover; display: block;
+  }
+  .jing-card__placeholder {
+    flex: 0 0 110px; height: 110px;
+    border: 1px dashed #c8c8c8; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    color: #aaa; font-size: .72em; text-align: center; line-height: 1.4;
+  }
+  .jing-card__body { flex: 1 1 auto; min-width: 0; }
+  .jing-card__name { margin: 0 0 2px; font-size: 1em; font-weight: 700; }
+  .jing-card__date { margin: 0 0 6px; font-size: .78em; color: #8a8a8a; }
+  .jing-card__desc { margin: 0; font-size: .84em; line-height: 1.5; }
+
+  @media (max-width: 480px) {
+    .jing-card { width: 240px; flex-direction: column; }
+    .jing-card__photo, .jing-card__placeholder { flex: none; width: 100%; height: 140px; }
+  }
+</style>
+
+<div class="jing-header">
+  <h1>우리가 다녀온 곳</h1>
+  <p>핀을 누르면 그날의 기록이 보입니다.</p>
+</div>
+
+<div id="jing-map"></div>
+
+{% comment %} 장소 데이터를 JSON 으로 넘깁니다. 편집은 _data/jing_places.yml 에서 하세요. {% endcomment %}
+<script id="jing-data" type="application/json">{{ site.data.jing_places | jsonify }}</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(function () {
+  var el = document.getElementById('jing-map');
+  if (!el || typeof L === 'undefined') { return; }
+
+  var places = [];
+  try {
+    places = JSON.parse(document.getElementById('jing-data').textContent) || [];
+  } catch (e) {
+    places = [];
+  }
+
+  var map = L.map('jing-map', { scrollWheelZoom: false, maxZoom: 18 });
+
+  // Stadia Outdoors. 한글·영문 지명이 타일에 포함되어 있습니다.
+  // Stadia 대시보드에 도메인을 등록해 인증하므로 코드에 API 키가 없습니다.
+  // {r} 은 고해상도 화면에서 @2x 타일을 받아옵니다.
+  L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
+    minZoom: 1,
+    maxZoom: 18,
+    // detectRetina 는 쓰지 않습니다. Leaflet 은 {r} 치환과 별개로 tileSize 를
+    // 절반으로 줄여 타일 요청 수를 4배로 늘리는데, {r} 과 겹치면 데이터가 10배가 됩니다.
+    // Stadia 가 @2x 를 제공하므로 {r} 만으로 고해상도 대응이 끝납니다.
+    updateWhenZooming: false,
+    keepBuffer: 1,
+    attribution: '&copy; <a href="https://stadiamaps.com/attribution/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
+  }).addTo(map);
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function formatDate(d) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(d || ''));
+    return m ? m[1] + '년 ' + (+m[2]) + '월 ' + (+m[3]) + '일' : escapeHtml(d);
+  }
+
+  function card(p, i) {
+    var media = p.photo
+      ? '<img class="jing-card__photo" src="' + escapeHtml(p.photo) + '" alt="' + escapeHtml(p.name) + '">'
+      : '<div class="jing-card__placeholder">사진<br>준비 중</div>';
+    return '<div class="jing-card">' + media +
+      '<div class="jing-card__body">' +
+        '<p class="jing-card__name">' + escapeHtml(p.name) + '</p>' +
+        '<p class="jing-card__date">' + formatDate(p.date) + '</p>' +
+        '<p class="jing-card__desc">' + escapeHtml(p.description) + '</p>' +
+      '</div></div>';
+  }
+
+  var pts = [];
+  places.forEach(function (p, i) {
+    if (typeof p.lat !== 'number' || typeof p.lng !== 'number') { return; }
+    var icon = L.divIcon({
+      className: '',
+      html: '<div class="jing-pin">' + (i + 1) + '</div>',
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+      popupAnchor: [0, -14]
+    });
+    L.marker([p.lat, p.lng], { icon: icon, title: p.name })
+      .addTo(map)
+      .bindPopup(card(p, i), { maxWidth: 360, minWidth: 240 });
+    pts.push([p.lat, p.lng]);
+  });
+
+  // 핀이 모두 보이도록 맞추고, 없으면 남한 전체를 보여줍니다.
+  if (pts.length > 1) {
+    map.fitBounds(pts, { padding: [50, 50] });
+  } else if (pts.length === 1) {
+    map.setView(pts[0], 11);
+  } else {
+    map.setView([36.5, 127.8], 7);
+  }
+
+  // 스크롤로 지도가 멋대로 확대되지 않게 하되, 클릭하면 휠 줌을 켭니다.
+  map.on('click', function () { map.scrollWheelZoom.enable(); });
+  map.on('mouseout', function () { map.scrollWheelZoom.disable(); });
+})();
+</script>

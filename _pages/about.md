@@ -27,7 +27,7 @@ Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at
 
 
 # 📖 Education
-- *2026.06 - Present*, Ph.D. in Artificial Intelligence, Sungkyunkwan University
+- *2026.03 - Present*, Ph.D. in Artificial Intelligence, Sungkyunkwan University
 - *2024.03 - 2026.02*, Master of Engineering in Immersive Media Engineering, Sungkyunkwan University (GPA: 4.40/4.5)
 - *2020.03 - 2024.02*, Bachelor of Science in Computer Education, Sungkyunkwan University (GPA: 3.96/4.5)
 

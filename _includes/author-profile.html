@@ -17,7 +17,9 @@
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
       {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+        {% assign desc = site.description %}
+        {% if site.easter_egg.word and site.easter_egg.url %}{% capture egg %}<span class="egg-trigger" data-egg-clicks="{{ site.easter_egg.clicks | default: 4 }}" data-egg-url="{{ site.easter_egg.url }}">{{ site.easter_egg.word }}</span>{% endcapture %}{% assign desc = desc | replace_first: site.easter_egg.word, egg %}{% endif %}
+        <li><div style="white-space: normal; margin-bottom: 1em;">{{ desc }}</div></li>
       {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
