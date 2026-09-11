@@ -11,16 +11,21 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {%- comment -%}
+      설명문은 .author__urls 안에 있었는데, 테마가 그 목록을 925px 미만에서
+      display:none 으로 숨깁니다. 모바일에서도 보이도록(그리고 이스터에그
+      트리거가 닿도록) 항상 표시되는 .author__content 안으로 옮겼습니다.
+    {%- endcomment -%}
+    {% if site.description %}
+      {% assign desc = site.description %}
+      {% if site.easter_egg.word and site.easter_egg.url %}{% capture egg %}<span class="egg-trigger" data-egg-clicks="{{ site.easter_egg.clicks | default: 4 }}" data-egg-url="{{ site.easter_egg.url }}">{{ site.easter_egg.word }}</span>{% endcapture %}{% assign desc = desc | replace_first: site.easter_egg.word, egg %}{% endif %}
+      <p class="author__desc">{{ desc }}</p>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        {% assign desc = site.description %}
-        {% if site.easter_egg.word and site.easter_egg.url %}{% capture egg %}<span class="egg-trigger" data-egg-clicks="{{ site.easter_egg.clicks | default: 4 }}" data-egg-url="{{ site.easter_egg.url }}">{{ site.easter_egg.word }}</span>{% endcapture %}{% assign desc = desc | replace_first: site.easter_egg.word, egg %}{% endif %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ desc }}</div></li>
-      {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}

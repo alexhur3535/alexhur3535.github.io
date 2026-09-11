@@ -23,6 +23,20 @@
 {% endfor %}{% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 
 <style>
+  /* 사이드바 설명문. 원래 .author__urls 안의 <li> 였는데 그 목록이
+     925px 미만에서 숨겨져 모바일에서 보이지 않았습니다. 항상 표시되는
+     .author__content 로 옮기면서 스타일을 여기로 가져왔습니다. */
+  .author__desc {
+    margin: .5em 0 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5;
+    white-space: normal;
+  }
+  @media (min-width: 57.8125em) {
+    .author__desc { margin: 0 0 1em; font-size: .75em; }
+  }
+
   /* Easter egg trigger: must read as ordinary text, not a link. */
   .egg-trigger {
     color: inherit;
