@@ -18,7 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # About Me
-Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at Sungkyunkwan University. I am advised by Professor <a href='https://professor.skku.edu/researcher/professorList.do?mode=view&perId=LZStrLISwEgpgTgqgDgDwDbACoGUBSBDA9gDkwBMBnAUQHEBzAXhqA%20&categoryId=U&jojikCode1=3191'>Moohong Min</a>. My research sits at the intersection of large language models and security, spanning jailbreak and multimodal attacks, retrieval-augmented generation, and also forensic analysis of AI agents. I aim to understand how AI systems fail under adversarial pressure, and to turn those failure modes into defenses and accountability mechanisms that hold up outside the lab.
+Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at Sungkyunkwan University. I am advised by Professor <a href='https://professor.skku.edu/researcher/professorList.do?mode=view&perId=LZStrLISwEgpgTgqgDgDwDbACoGUBSBDA9gDkwBMBnAUQHEBzAXhqA%20&categoryId=U&jojikCode1=3191'>Moohong Min</a> in the <a href='https://swlab.skku.edu/'>Software Laboratory</a>. My research sits at the intersection of large language models and security, spanning jailbreak and multimodal attacks, retrieval-augmented generation, and also forensic analysis of AI agents. I aim to understand how AI systems fail under adversarial pressure, and to turn those failure modes into defenses and accountability mechanisms that hold up outside the lab.
+
+Here is a <a href='/files/Minseok_Hur_cv.pdf' target='_blank' rel='noopener'>link to my curriculum vitae</a>. (Last updated October 2026)
 
 
 # 🔥 News
@@ -30,13 +32,6 @@ Welcome to my homepage! I am a Ph.D. student studying Artificial Intelligence at
 - *2026.03 - Present*, Ph.D. in Artificial Intelligence, Sungkyunkwan University
 - *2024.03 - 2026.02*, Master of Engineering in Immersive Media Engineering, Sungkyunkwan University (GPA: 4.40/4.5)
 - *2020.03 - 2024.02*, Bachelor of Science in Computer Education, Sungkyunkwan University (GPA: 3.96/4.5)
-
-
-# 🚀 Projects
-<!-- Fill in below, then delete this comment.
-- *2025.03 - 2025.12*, **Project Name** — one-line description.
-  [[GitHub]](https://github.com/...){:target="_blank" rel="noopener"}
--->
 
 
 # 📝 Publications
@@ -281,14 +276,45 @@ The 8th International Conference on Mobile Internet Security (MobiSec)
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 
-# 💼 Experience
-<!-- Fill in below, then delete this comment.
-- *2025.01 - 2025.08*, **Role**, Organization, Location.
--->
+
+# 🔬 Research Experience
+
+- *2026.06 - Present*, **AI-based Diagnosis of Floor Impact Sound Reduction Performance in Apartment Buildings**, funded by the Korea Agency for Infrastructure Technology Advancement (KAIA), in industry collaboration with MetaInnotech. - Advancing the AI analysis engine for AIoT-measured floor impact sound data for automatic measurement quality assessment and an MLOps pipeline for continuous retraining and performance monitoring.
+
+- *2026.01 - Present*, **Development of an Integrated Narcotics Investigation System Linked to Dark Web and Virtual Asset Transaction Tracing**, funded by the Korean National Police Agency (KNPA) and the Ministry of Science and ICT (MSIT), managed by the Korea Institute of Police Technology (KIPoT). - Developing deep learning techniques for detecting and identifying illicit drug advertisements on social media, dark web, and Telegram, covering drug slang database construction, multimodal advertisement classification, and adaptive handling of evolving slang and obfuscation patterns.
+
+- *2026.01 - Present*, **Attack Scenario Analysis and Hybrid RAG Knowledge Base Construction Based on MITRE ATT&CK and D3FEND**, part of the *Development of an AI White-Hacker-based Zero-Hacking System* program led by the Korea Institute of Science and Technology Information (KISTI), in collaboration with KAIST. - Designing and building the ATT&CK/D3FEND-grounded knowledge database that enables an LLM-based attack profiler to reason over multi-stage intrusion scenarios.
+
+- *2025.03 - 2025.12*, **Development of Cyber Security Regulation Technologies for Programmable Logic Devices in the Development Phase of New Nuclear Reactors**, funded by Korea Foundation of Nuclear Safety (KoFONS). - Analyzed the FPGA development lifecycle, existing nuclear safety regulatory requirements, and known security vulnerabilities to derive development-phase cybersecurity requirements.
+
+- *2024.07 - 2024.12*, **Analysis of Security Evaluation Techniques for Boundary Protection to Support Defense-in-Depth Strategies in Nuclear Facilities**, funded by the Korea Institute of Nuclear Nonproliferation and Control (KINAC). - Surveyed boundary protection technologies applied to essential digital assets in nuclear facilities, developed security inspection procedures, and proposed regulatory application measures supporting the revision of the KINAC/RS-015 inspection and audit guideline.
+
+<!-- - *2025.03 - 2025.12*, **	Development of cyber security regulation technologies for programmable logic devices in the development phase of new nuclear reactors** — one-line description.
+  [[GitHub]](https://github.com/...){:target="_blank" rel="noopener"} -->
+
+
+
+# 📚 Teaching Experience
+
+- *2026 Fall*, **Machine Learning**, Teaching Assistant, Sungkyunkwan University.
+
+- *2026 Fall*, **Derivatives**, Teaching Assistant, Sungkyunkwan University.
+
+- *2026 Spring*, **Introduction to Data Analysis and AI**, Teaching Assistant, Sungkyunkwan University.
+
+- *2024 Spring - 2025 Fall*, **AI Basics & Uses**, Teaching Assistant, Sungkyunkwan University. - Six semesters: 2024 Spring, Summer, Fall, and Winter; 2025 Spring and Fall.
+
+- *2024.03 - 2024.12*, **R&E (Research and Education) Program**, Seoul Science High School. - Designed and led the R&E program organized by Seoul Science High School, mentoring the student project *Developing a Spam Detection Model Specifically Designed for Adolescents*.
+
+- *2023 Fall*, **Problem Solving and Algorithm**, Teaching Assistant, Sungkyunkwan University.
+
+- *2023.04*, **Teaching Practicum Student**, Sunae High School.
 
 
 # 🎖 Honors and Awards
-- *2024.12* Best Student Paper Award/ISOFIC 2024, "Procedures for Developing Secure FPGA in Nuclear Power Plants".. 
+- *2026.03* Graduate School Scholarship Type 2 (half-tuition, worth ≈ $11,500), Sungkyunkwan University, Korea.
+- *2024.12* Best Student Paper Award/ISOFIC 2024, "Procedures for Developing Secure FPGA in Nuclear Power Plants", Korea 
+- *2024.03* ICT Innovation Human Resources Development Scholarship (full-tuition, worth ≈ $23,000), Ministry of Science and ICT (MSIT) / IITP, Korea.
 - *2023.11* Grand Award/Gyeonggi-do Metaverse Ideathon, Ministry of Science and ICT, Korea. 
 - *2022.09* Bronze Award/2022 2nd SKKU College of Education AI Education Hackathon, SKKU, Korea. 
 - *2021.12* Silver Award/College of Education AI Education Capstone Design Contest, SKKU, Korea. 

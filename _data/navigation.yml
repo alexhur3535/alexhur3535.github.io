@@ -1,4 +1,5 @@
 # main links links
+# 본문(_pages/about.md)의 섹션 순서·제목과 일치해야 합니다.
 main:
   - title: "About Me"
     url: "/#about-me"
@@ -9,14 +10,14 @@ main:
   - title: "Education"
     url: "/#-education"
 
-  - title: "Projects"
-    url: "/#-projects"
-
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Experience"
-    url: "/#-experience"
+  - title: "Research Experience"
+    url: "/#-research-experience"
+
+  - title: "Teaching Experience"
+    url: "/#-teaching-experience"
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
